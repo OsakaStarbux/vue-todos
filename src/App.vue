@@ -16,7 +16,17 @@
     name: 'app',
     components: {
       ToDoItem
-    }
+    },
+    data() {
+    return {
+      ToDoItems: [
+        { label: 'Learn Vue', done: false },
+        { label: 'Create a Vue project with the CLI', done: true },
+        { label: 'Have fun', done: true },
+        { label: 'Create a to-do list', done: false }
+      ]
+    };
+  }
  
 }
 </script>
